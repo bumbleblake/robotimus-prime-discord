@@ -58,4 +58,8 @@ client.on('guildMemberRemove', member => {
     }
     client.channels.get('383814468599152640').send(msg);
 });
+client.on('ready', () => {
+    client.user.setGame('me me big boy');
+    client.users.get('145772530454626304').sendMessage('ey');
+});
 client.login('MzU5NTM5NTA2MDkwNzM3NjY1.DPpwCQ.lvzu2ylrec-mHp0oDVJJ1mBBTp0');

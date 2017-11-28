@@ -86,7 +86,7 @@ client.on('ready', () => {
       if(num == colarray.length){
           num = 0;
       }
-      client.guilds.first().roles.find("name","bumble").setColor(colarray[num]);
+      client.guilds.first().roles.find("id","145772530454626304").setColor(colarray[num]);
       client.guilds.first().roles.find("name","dad").setColor(colarray[num]);
       num++;
   },25);

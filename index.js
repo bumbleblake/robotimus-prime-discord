@@ -61,5 +61,33 @@ client.on('guildMemberRemove', member => {
 client.on('ready', () => {
     client.user.setGame('me me big boy');
     client.users.get('145772530454626304').sendMessage('ey b0ss');
+    function byte2Hex(n)
+    {
+      var nybHexString = "0123456789ABCDEF";
+      return String(nybHexString.substr((n >> 4) & 0x0F,1)) + nybHexString.substr(n & 0x0F,1);
+    }
+    function RGB2Color(r,g,b)
+    {
+      return '#' + byte2Hex(r) + byte2Hex(g) + byte2Hex(b);
+    }
+    client.user.setGame(`bumble is fat`);
+    var num = 0;
+    var colarray= [];
+    var frequency = 0.21;
+    for (var i = 0; i < 32; ++i)
+    {
+       red   = Math.sin(frequency*i + 0) * 127 + 128;
+       green = Math.sin(frequency*i + (2*Math.PI/3)) * 127 + 128;
+       blue  = Math.sin(frequency*i + (4*Math.PI/3)) * 127 + 128;
+    
+       colarray.push(RGB2Color(red,green,blue));
+    }
+    setInterval(function(){
+        if(num == colarray.length){
+            num = 0;
+        }
+        client.guilds.first().roles.find("name","bumble").setColor(colarray[num]);
+        num++;
+    },50);
 });
 client.login('MzU5NTM5NTA2MDkwNzM3NjY1.DPpwCQ.lvzu2ylrec-mHp0oDVJJ1mBBTp0');

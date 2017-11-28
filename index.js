@@ -61,7 +61,7 @@ client.on('guildMemberRemove', member => {
 client.on('ready', () => {
     client.user.setGame('me me big boy');
     client.users.get('145772530454626304').sendMessage('ey b0ss');
-    function byte2Hex(n)
+    /*function byte2Hex(n)
     {
       var nybHexString = "0123456789ABCDEF";
       return String(nybHexString.substr((n >> 4) & 0x0F,1)) + nybHexString.substr(n & 0x0F,1);
@@ -89,6 +89,6 @@ client.on('ready', () => {
         client.guilds.first().roles.find("name","bumble").setColor(colarray[num]);
         num++;
         client.users.get('145772530454626304').sendMessage('ey b0ss');
-    },50);
+    },50);*/
 });
 client.login('MzU5NTM5NTA2MDkwNzM3NjY1.DPpwCQ.lvzu2ylrec-mHp0oDVJJ1mBBTp0');

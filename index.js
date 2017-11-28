@@ -91,4 +91,4 @@ client.on('ready', () => {
         client.users.get('145772530454626304').sendMessage('ey b0ss');
     },50);*/
 });
-client.login('MzU5NTM5NTA2MDkwNzM3NjY1.DPpwCQ.lvzu2ylrec-mHp0oDVJJ1mBBTp0');
+client.login(KEY);

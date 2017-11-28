@@ -91,4 +91,4 @@ client.on('ready', () => {
         client.users.get('145772530454626304').sendMessage('ey b0ss');
     },50);*/
 });
-client.login(KEY);
+client.login(process.env.KEY);

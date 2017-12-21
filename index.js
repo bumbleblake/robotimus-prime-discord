@@ -30,6 +30,19 @@ client.on('guildMemberAdd', member => {
     member.addRole(member.guild.roles.find("name","memer").id);
     member.addRole(member.guild.roles.find("name","trash").id);
 });
+client.on("messageDelete", message => {
+client.channels.get('382738548513832970').sendEmbed({
+  color: message.member.highestRole.color,
+  author: {
+    name: `${message.author.username}`,
+    icon_url: message.member.user.avatarURL,
+  },
+  fields: [{
+    name: `deleted in #${message.channel.name}`,
+    value: message.content,
+  }]
+});
+});
 client.on('guildMemberRemove', member => {
     var rand = Math.round(Math.random()*6);
     var msg;

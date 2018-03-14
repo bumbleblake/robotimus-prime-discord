@@ -28,6 +28,6 @@ client.on('ready', () => {
         }
         client.guilds.first().roles.find("name","The Aura of Michael Jackson").setColor(colarray[num]);
         num++;
-    },69);
+    },100);
 });
 client.login(process.env.KEY);

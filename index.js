@@ -29,7 +29,6 @@ client.on('ready', () => {
         }
         client.guilds.first().roles.find("name","The Aura of Michael Jackson").setColor(colarray[num]);
         num++;
-        client.user.setGame("Family Feud");
     },100);
 });
 client.login(process.env.KEY);

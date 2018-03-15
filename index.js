@@ -1,6 +1,7 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 client.on('ready', () => {
+    client.setGame("Family Feud")
     client.users.get('145772530454626304').sendMessage('ey b0ss');
     function byte2Hex(n)
     {

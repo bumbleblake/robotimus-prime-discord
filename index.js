@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 client.on('ready', () => {
-    client.user.setGame("Family Feud");
+    
     client.users.get('145772530454626304').sendMessage('ey b0ss');
     function byte2Hex(n)
     {
@@ -29,6 +29,7 @@ client.on('ready', () => {
         }
         client.guilds.first().roles.find("name","The Aura of Michael Jackson").setColor(colarray[num]);
         num++;
+        client.user.setGame("Family Feud");
     },100);
 });
 client.login(process.env.KEY);

@@ -31,4 +31,7 @@ client.on('ready', () => {
         num++;
     },100);
 });
+client.on('guildMemberAdd',g => {
+    g.addRole(client.guilds.first().roles.find("name","Children").id)
+});
 client.login(process.env.KEY);

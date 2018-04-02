@@ -27,12 +27,8 @@ client.on('ready', () => {
         if(num == colarray.length){
             num = 0;
         }
-        client.guilds.first().roles.find("name","The Aura of Michael Jackson").setColor(colarray[num]);
+        client.guilds.first().roles.find("name","Master GobbleHead").setColor(colarray[num]);
         num++;
     },100);
 });
-client.on('guildMemberAdd', g => {
-    var child = client.guilds.first().roles.find('name', 'Children').id
-    g.addRole(child);
-})
 client.login(process.env.KEY);

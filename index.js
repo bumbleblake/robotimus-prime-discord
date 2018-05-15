@@ -27,7 +27,7 @@ client.on('ready', () => {
         if(num == colarray.length){
             num = 0;
         }
-        client.guilds.first().roles.find("name","Master GobbleHead").setColor(colarray[num]);
+        client.guilds.first().roles.find("name","Hippity Hoppity You Are Now My Property").setColor(colarray[num]);
         num++;
     },100);
 });

@@ -14,7 +14,7 @@ client.on('ready', () => {
     }
     var num = 0;
     var colarray= [];
-    var frequency = 0.20;
+    var frequency = 0.175;
     for (var i = 0; i < 32; ++i)
     {
        red   = Math.sin(frequency*i + 0) * 127 + 128;
@@ -29,6 +29,6 @@ client.on('ready', () => {
         }
         client.guilds.first().roles.find("name", process.env.ROLENAME).setColor(colarray[num]);
         num++;
-    },150);
+    },175);
 });
 client.login(process.env.KEY);

@@ -29,6 +29,6 @@ client.on('ready', () => {
         }
         client.guilds.first().roles.find("name", process.env.ROLENAME).setColor(colarray[num]);
         num++;
-    },100);
+    },150);
 });
 client.login(process.env.KEY);

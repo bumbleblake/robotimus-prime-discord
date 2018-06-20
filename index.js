@@ -14,7 +14,7 @@ client.on('ready', () => {
     }
     var num = 0;
     var colarray= [];
-    var frequency = 0.175;
+    var frequency = 0.2;
     for (var i = 0; i < 32; ++i)
     {
        red   = Math.sin(frequency*i + 0) * 127 + 128;
